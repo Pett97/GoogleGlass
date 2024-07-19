@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE js</title>
+    <script>
+        function acendaLampada(){
+            document.getElementById("lampada").src= "/_imagens/lampada-acesa.jpg"
+        }
+        function apagaLampada(){
+            document.getElementById("lampada").src= "/_imagens/lampada-apagada.jpg"
+        }
+        function quebraLampada(){
+            document.getElementById("lampada").src = "/_imagens/lampada-quebrada.jpg"
+        }
+    </script>
+</head>
+<body>
+    <h1>Lampada</h1>
+
+    <img id="lampada" src="/_imagens/lampada-apagada.jpg" alt="" onmousemove="acendaLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()">
+</body>
+</html>
